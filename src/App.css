@@ -80,16 +80,23 @@ section .homeGrid {
       grid-template-columns: 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-  grid-gap: 200px;
+  grid-gap: 120px;
 }
 
 section .homeGrid a {
-  font-size: 18px;
+  font-size: 20px;
   text-decoration: none;
   background-color: #689DF4;
   border-radius: 20px;
-  padding: 50px;
+  padding: 1em;
+  padding-top: 3em;
+  padding-bottom: 3em;
   margin: 40px;
+  text-align: center;
+}
+
+section .homeGrid a a:hover {
+  color: #000000;
 }
 
 section .homeGrid a:visited {

@@ -1,64 +1,33 @@
 import './App.css';
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Home, Transitions, CampusServices, CampusMap, ITServices, Societies, LocalServices, Timetable, Calendar } from "./pages";
+import Header from "./header";
+import Footer from "./footer";
 
-function Header() {
-  return (
-    <header>
-      <a href="/">
-      <img src="images/logo.png" alt="Uni Logo" />
-      </a>
-      <h1>EHU Freshers App</h1>
-      <nav>Nav</nav>
-    </header>
-  );
-}
 
-function Main() {
+class App extends Component {
+  render() {
   return (
-    <section>
-      <h1>Welcome to the Edge Hill CS Freshers App</h1>
-      <h2>Please select an option/service:</h2>
-      <div class="homeGrid">
-        <a href="transition">Transitions Team</a>
-        <a href="transition">Campus Services</a>
-        <a href="transition">Campus Map</a>
-        <a href="transition">IT Services</a>
-        <a href="transition">Societies</a>
-        <a href="transition">Local Services</a>
-        <a href="transition">Timetable</a>
-        <a href="transition">Calendar/Schedule</a>
-      </div>
-    </section>
-  );
-}
-
-function Footer() {
-  return (
-    <footer>
-      <h2>©2021 Shaun Halliday</h2>
-      <div class="footerWrapper">
-        <h2>Socials:</h2>
-        <a target="_blank" href="https://www.facebook.com/studentsehu">
-          <img class="facebook" src="images/facebook.png" alt="Facebook link" />
-        </a>
-        <a target="_blank" href="https://twitter.com/StudentsEHU">
-          <img class="twitter" src="images/twitter.png" alt="Twitter link" />
-        </a>
-        <a target="_blank" href="https://www.linkedin.com/school/edge-hill-university">
-          <img class="twitter" src="images/twitter.png" alt="Twitter link" />
-        </a>
-      </div>
-    </footer>
-  );
-}
-
-function App() {
-  return (
-    <div className="App">
+    <Router>
+    <div>
       <Header />
-      <Main />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/transitions" component={Transitions} />
+        <Route path="/campusservices" component={CampusServices} />
+        <Route path="/campusmap" component={CampusMap} />
+        <Route path="/itservices" component={ITServices} />
+        <Route path="/societies" component={Societies} />
+        <Route path="/localservices" component={LocalServices} />
+        <Route path="/timetable" component={Timetable} />
+        <Route path="/calendar" component={Calendar} />
+        </Switch>
       <Footer />
     </div>
+    </Router>
   );
+  }
 }
 
 export default App;
