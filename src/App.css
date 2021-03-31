@@ -5,7 +5,7 @@ body > #root > div {
 
 .App {
   margin: 0;
-  width: 100%;
+  width: 100vw;
   text-align: center;
 }
 
@@ -47,14 +47,13 @@ header h1 {
 }
 
 .navbar {
-  background-color: #689DF4;
   height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -78,6 +77,7 @@ header h1 {
           justify-content: center;
   position: fixed;
   top: 0;
+  font-family: "Raleway", sans-serif;
   left: -100%;
   -webkit-transition: 850ms;
   transition: 850ms;
@@ -87,7 +87,6 @@ header h1 {
   right: 0;
   -webkit-transition: 350ms;
   transition: 350ms;
-  z-index: 1;
 }
 
 .nav-text {
@@ -152,6 +151,10 @@ header + section {
   padding-top: 102px;
 }
 
+header + main {
+  padding-top: 102px;
+}
+
 section {
   height: 80vh;
 }
@@ -169,6 +172,11 @@ section h2 {
   font-family: "Montserrat", sans-serif;
 }
 
+section p {
+  font-family: "Raleway", sans-serif;
+  margin-left: 10%;
+}
+
 section .homeGrid {
   display: -ms-grid;
   display: grid;
@@ -176,7 +184,7 @@ section .homeGrid {
       grid-template-columns: 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-  grid-gap: 120px;
+  grid-gap: 2em;
 }
 
 section .homeGrid a {
@@ -198,6 +206,34 @@ section .homeGrid a a:hover {
 
 section .homeGrid a:visited {
   color: #ffffff;
+}
+
+main {
+  height: 80vh;
+}
+
+main h1 {
+  font-size: 30px;
+  text-align: left;
+  margin-left: 10%;
+  font-family: "Montserrat", sans-serif;
+}
+
+main h2 {
+  text-align: left;
+  margin-left: 10%;
+  font-family: "Montserrat", sans-serif;
+}
+
+main p {
+  font-family: "Raleway", sans-serif;
+  margin-left: 10%;
+}
+
+main a {
+  margin-left: 10%;
+  text-decoration: none;
+  color: #04619E;
 }
 
 footer {
@@ -242,5 +278,9 @@ footer .footerWrapper {
 footer .socials {
   width: 40px;
   height: 40px;
+}
+
+.tourVideo {
+  margin-left: 10%;
 }
 /*# sourceMappingURL=App.css.map */

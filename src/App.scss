@@ -19,7 +19,7 @@ body>#root>div {
 
 .App {
   margin: 0;
-  width: 100%;
+  width: 100vw;
   text-align: center;
 }
 
@@ -53,10 +53,9 @@ header {
 
 // Navigation menu styling
 .navbar {
-  background-color: $LightBlue;
   height: 80px;
   display: flex;
-  justify-content: start;
+  justify-content: end;
   align-items: center;
 }
 
@@ -74,6 +73,7 @@ header {
   justify-content: center;
   position: fixed;
   top: 0;
+  font-family: $Raleway;
   left: -100%;
   transition: 850ms;
 }
@@ -81,7 +81,6 @@ header {
 .nav-menu-active {
   right: 0;
   transition: 350ms;
-  z-index: 1;
 }
 
 .nav-text {
@@ -126,12 +125,14 @@ span {
   margin-left: 16px;
 }
 
-
+// Padding to push section under header
 header+section {
   padding-top: 102px;
 }
 
-
+header+main {
+  padding-top: 102px;
+}
 
 // Section styling
 section {
@@ -150,11 +151,16 @@ section {
     font-family: $Montserrat;
   }
 
+  p {
+    font-family: $Raleway;
+    margin-left: 10%;
+  }
+
   .homeGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 120px;
+    grid-gap: 2em;
 
     a {
       font-size: 20px;
@@ -176,6 +182,34 @@ section {
     a:visited {
       color: $White;
     }
+  }
+}
+
+main {
+  height: 80vh;
+
+  h1 {
+    font-size: 30px;
+    text-align: left;
+    margin-left: 10%;
+    font-family: $Montserrat;
+  }
+
+  h2 {
+    text-align: left;
+    margin-left: 10%;
+    font-family: $Montserrat;
+  }
+
+  p {
+    font-family: $Raleway;
+    margin-left: 10%;
+  }
+
+  a {
+    margin-left: 10%;
+    text-decoration: none;
+    color: $DarkBlue;
   }
 }
 
@@ -206,4 +240,8 @@ footer {
     width: 40px;
     height: 40px;
   }
+}
+
+.tourVideo {
+  margin-left: 10%;
 }

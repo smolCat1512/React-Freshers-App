@@ -1,10 +1,13 @@
 import './App.css';
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Home, Transitions, CampusServices, CampusMap, ITServices, Societies, LocalServices, Timetable, Calendar } from "./pages";
+import { CampusMap, ITServices, Societies, LocalServices, Timetable, Calendar } from "./pages";
 import Header from "./header";
 import Footer from "./footer";
-import Navbar from './Navbar';
+import Home from "./pages/Home";
+import Transitions from "./pages/Transitions";
+import CampusServices from "./pages/CampusServices";
+
 
 class App extends Component {
   render() {
