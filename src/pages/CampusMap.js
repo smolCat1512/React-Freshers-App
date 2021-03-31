@@ -1,7 +1,7 @@
 import React from "react"
-import './App.css';
+import '../App.css';
 
-    export function CampusMap() {
+    function CampusMap() {
         return (
         <main>
             <h1>Campus Map Page</h1>
@@ -18,42 +18,4 @@ import './App.css';
         );
     }
 
-    export function ITServices() {
-        return (
-        <section>
-            <h1>IT Services Page</h1>
-        </section>
-        );
-    }
-
-    export function Societies() {
-        return (
-        <section>
-            <h1>Societies Page</h1>
-        </section>
-        );
-    }
-
-    export function LocalServices() {
-        return (
-        <section>
-            <h1>Local Services Page</h1>
-        </section>
-        );
-    }
-
-    export function Timetable() {
-        return (
-        <section>
-            <h1>Timetable Page</h1>
-        </section>
-        );
-    }
-
-    export function Calendar() {
-        return (
-        <section>
-            <h1>Calendar Page</h1>
-        </section>
-        );
-    }
+export default CampusMap;
