@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Raleway&display=swap");
 body > #root > div {
   height: 100vh;
 }
@@ -19,9 +20,6 @@ header {
           flex-direction: wrap;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -45,13 +43,109 @@ header img {
 
 header h1 {
   color: #04619E;
+  font-family: "Montserrat", sans-serif;
 }
 
-header nav {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin-right: 5%;
+.navbar {
+  background-color: #689DF4;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-bars {
+  margin-right: 2rem;
+  font-size: 2rem;
+  background: none;
+}
+
+.nav-menu {
+  background-color: #689DF4;
+  width: 300px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  -webkit-transition: 850ms;
+  transition: 850ms;
+}
+
+.nav-menu-active {
+  right: 0;
+  -webkit-transition: 350ms;
+  transition: 350ms;
+  z-index: 1;
+}
+
+.nav-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 80px;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+
+.nav-text a:hover {
+  background-color: #04619E;
+}
+
+.nav-menu-items {
+  width: 100%;
+}
+
+.navbar-toggle {
+  background-color: #689DF4;
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+span {
+  margin-left: 16px;
 }
 
 header + section {
@@ -66,11 +160,13 @@ section h1 {
   font-size: 30px;
   text-align: left;
   margin-left: 10%;
+  font-family: "Montserrat", sans-serif;
 }
 
 section h2 {
   text-align: left;
   margin-left: 10%;
+  font-family: "Montserrat", sans-serif;
 }
 
 section .homeGrid {
@@ -93,6 +189,7 @@ section .homeGrid a {
   padding-bottom: 3em;
   margin: 40px;
   text-align: center;
+  font-family: "Raleway", sans-serif;
 }
 
 section .homeGrid a a:hover {
@@ -127,6 +224,7 @@ footer {
   border-top: 3px solid #04619E;
   color: #04619E;
   position: fixed;
+  font-family: "Montserrat", sans-serif;
 }
 
 footer .footerWrapper {
@@ -141,12 +239,7 @@ footer .footerWrapper {
           align-items: center;
 }
 
-footer .facebook {
-  width: 40px;
-  height: 40px;
-}
-
-footer .twitter {
+footer .socials {
   width: 40px;
   height: 40px;
 }

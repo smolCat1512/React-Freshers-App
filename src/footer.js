@@ -8,13 +8,13 @@ function Footer() {
         <div class="footerWrapper">
           <h2>Socials:</h2>
           <a target="_blank" href="https://www.facebook.com/studentsehu">
-            <img class="facebook" src="images/facebook.png" alt="Facebook link" />
+            <img class="socials" src="images/facebook.png" alt="Facebook link" />
           </a>
           <a target="_blank" href="https://twitter.com/StudentsEHU">
-            <img class="twitter" src="images/twitter.png" alt="Twitter link" />
+            <img class="socials" src="images/twitter.png" alt="Twitter link" />
           </a>
           <a target="_blank" href="https://www.linkedin.com/school/edge-hill-university">
-            <img class="twitter" src="images/twitter.png" alt="Twitter link" />
+            <img class="socials" src="images/linkedin.png" alt="LinkedIn link" />
           </a>
         </div>
       </footer>

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
 
 function Header() {
     return (
@@ -8,7 +10,7 @@ function Header() {
         <img src="images/logo.png" alt="Uni Logo" />
         </a>
         <h1>EHU Freshers App</h1>
-        <nav>Nav</nav>
+        <Navbar />
       </header>
     );
   }
