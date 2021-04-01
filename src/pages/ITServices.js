@@ -3,9 +3,9 @@ import '../App.css';
 
 function ITServices() {
         return (
-        <section>
+        <main>
             <h1>IT Services Page</h1>
-        </section>
+        </main>
         );
     }
 

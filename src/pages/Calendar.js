@@ -3,9 +3,9 @@ import '../App.css';
 
     function Calendar() {
         return (
-        <section>
+        <main>
             <h1>Calendar Page</h1>
-        </section>
+        </main>
         );
     }
 

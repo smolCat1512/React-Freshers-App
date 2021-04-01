@@ -39,9 +39,12 @@ function CampusServices() {
             <a target="_blank" href="https://accommodation.apps.edgehill.ac.uk/RunFeature/RunFeature?ftl=X539cede95d474e339a6ef92b481d860c" 
             rel="noreferrer">Accomodation portal link</a>
 
+
             
-            <img src={campusehu} alt="EHU Campus Life logo" height={200} width={500} />
             <h2>Campus Life EHU</h2>
+            <a href="https://www.edgehill.ac.uk/studentservices/campus-life-2/">
+            <img className="removeleftmargin" src={campusehu} alt="EHU Campus Life logo" height={200} width={500} />
+            </a>
             <p>Edge Hill has a Campus Life EHU department, here to help with all your campus issues.
                 Providing not only guidance but support and events information.
             </p>

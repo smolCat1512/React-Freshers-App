@@ -4,9 +4,9 @@ import '../App.css';
 
     function Timetable() {
         return (
-        <section>
+        <main>
             <h1>Timetable Page</h1>
-        </section>
+        </main>
         );
     }
 

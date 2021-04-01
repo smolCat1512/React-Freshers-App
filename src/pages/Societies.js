@@ -3,9 +3,9 @@ import '../App.css';
 
     function Societies() {
         return (
-        <section>
+        <main>
             <h1>Societies Page</h1>
-        </section>
+        </main>
         );
     }
 
