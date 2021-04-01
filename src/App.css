@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Raleway&display=swap");
+.darkbluetext {
+  color: #04619E;
+}
+
+.lightbluetext {
+  color: #689DF4;
+}
+
 body > #root > div {
   height: 100vh;
 }
@@ -210,6 +218,8 @@ section .homeGrid a:visited {
 
 main {
   height: 80vh;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 main h1 {
@@ -228,6 +238,11 @@ main h2 {
 main p {
   font-family: "Raleway", sans-serif;
   margin-left: 10%;
+}
+
+main ul {
+  margin-left: 10%;
+  font-family: "Raleway", sans-serif;
 }
 
 main a {
@@ -282,5 +297,13 @@ footer .socials {
 
 .tourVideo {
   margin-left: 10%;
+}
+
+.booking {
+  padding: 16px 32px;
+  border-radius: 20px;
+  background-color: #04619E;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
 }
 /*# sourceMappingURL=App.css.map */

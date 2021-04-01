@@ -13,6 +13,14 @@ sans-serif;
 $Raleway: 'Raleway',
 sans-serif;
 
+.darkbluetext {
+  color: $DarkBlue;
+}
+
+.lightbluetext {
+  color: $LightBlue;
+}
+
 body>#root>div {
   height: 100vh;
 }
@@ -187,6 +195,8 @@ section {
 
 main {
   height: 80vh;
+  margin-left: 5%;
+  margin-right: 5%;
 
   h1 {
     font-size: 30px;
@@ -204,6 +214,11 @@ main {
   p {
     font-family: $Raleway;
     margin-left: 10%;
+  }
+
+  ul {
+    margin-left: 10%;
+    font-family: $Raleway;
   }
 
   a {
@@ -244,4 +259,12 @@ footer {
 
 .tourVideo {
   margin-left: 10%;
+}
+
+.booking {
+  padding: 16px 32px;
+  border-radius: 20px;
+  background-color: $DarkBlue;
+  color: $White;
+  font-family: $Montserrat;
 }
