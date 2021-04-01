@@ -13,26 +13,18 @@ sans-serif;
 $Raleway: 'Raleway',
 sans-serif;
 
-.darkbluetext {
-  color: $DarkBlue;
-}
-
-.lightbluetext {
-  color: $LightBlue;
-}
-
-body>#root>div {
-  height: 100vh;
-}
-
-.App {
+// Set body with no margins or padding so stretches to edges correctly
+body {
   margin: 0;
-  width: 100vw;
-  text-align: center;
+  padding: 0;
+  position: relative;
+  min-height: 100vh;
 }
 
 // Header styling, all header styling apart from nav menu/sidebar
 header {
+  margin: 0;
+  padding: 0;
   height: 10vh;
   display: flex;
   flex-direction: wrap;
@@ -42,7 +34,9 @@ header {
   width: 100%;
   border-bottom: 3px solid $DarkBlue;
   position: fixed;
+  background-color: $Grey;
 
+  // Logo styling, for positioning and changing colour to style colouring
   img {
     width: 60px;
     height: 52px;
@@ -53,6 +47,7 @@ header {
     margin-left: 5%;
   }
 
+  // Header text styling and font
   h1 {
     color: #04619E;
     font-family: $Montserrat;
@@ -197,22 +192,33 @@ main {
   height: 80vh;
   margin-left: 5%;
   margin-right: 5%;
+  z-index: -1;
+
+  img {
+    margin-left: 10%;
+  }
 
   h1 {
     font-size: 30px;
     text-align: left;
     margin-left: 10%;
     font-family: $Montserrat;
+    color: $DarkBlue;
   }
 
   h2 {
     text-align: left;
     margin-left: 10%;
     font-family: $Montserrat;
+    color: $DarkBlue;
   }
 
   p {
     font-family: $Raleway;
+    margin-left: 10%;
+  }
+
+  iframe {
     margin-left: 10%;
   }
 
@@ -225,6 +231,12 @@ main {
     margin-left: 10%;
     text-decoration: none;
     color: $DarkBlue;
+    font-family: $Raleway;
+  }
+
+  .socials {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -237,7 +249,6 @@ footer {
   align-items: center;
   justify-content: space-between;
   margin: 0;
-  z-index: 10;
   width: 100%;
   border-top: 3px solid $DarkBlue;
   color: #04619E;
@@ -257,8 +268,10 @@ footer {
   }
 }
 
-.tourVideo {
-  margin-left: 10%;
+// Created and used on each page for design, allows content to flow
+// above the footer, an easy quick fix
+.footerspacer {
+  height:10vh;
 }
 
 .booking {
@@ -267,4 +280,5 @@ footer {
   background-color: $DarkBlue;
   color: $White;
   font-family: $Montserrat;
+  margin-bottom: 10%;
 }
