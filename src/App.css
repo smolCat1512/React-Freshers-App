@@ -28,17 +28,11 @@ header {
   background-color: #D6DDE1;
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 411px) {
   header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     height: 10vh;
   }
 }
@@ -57,7 +51,7 @@ header img {
   margin-right: 40px;
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 411px) {
   header img {
     width: 30px;
     height: 28px;
@@ -69,7 +63,7 @@ header h1 {
   font-family: "Montserrat", sans-serif;
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 411px) {
   header h1 {
     font-size: large;
   }
@@ -124,7 +118,7 @@ section p {
   grid-gap: 2em;
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 411px) {
   .homeGrid {
     display: -ms-grid;
     display: grid;
@@ -133,7 +127,7 @@ section p {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: tablet) {
   .homeGrid {
     display: -ms-grid;
     display: grid;
@@ -158,7 +152,7 @@ section p {
   color: #ffffff;
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 411px) {
   .homeGrid a {
     padding: 2em;
   }
@@ -253,23 +247,21 @@ footer {
   font-family: "Montserrat", sans-serif;
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 411px) {
   footer {
     bottom: 0;
     height: 20vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+@media (max-width: tablet) {
+  footer {
+    bottom: 0;
+    height: 30vh;
+    display: -ms-grid;
+    display: grid;
   }
 }
 
@@ -285,7 +277,15 @@ footer .footerWrapper {
           align-items: center;
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 411px) {
+  footer .footerWrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media (max-width: tablet) {
   footer .footerWrapper {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -300,6 +300,18 @@ footer .socials {
 
 .footerspacer {
   height: 10vh;
+}
+
+@media (max-width: 411px) {
+  .footerspacer {
+    height: 20vh;
+  }
+}
+
+@media (max-width: tablet) {
+  .footerspacer {
+    height: 20vh;
+  }
 }
 
 .booking {

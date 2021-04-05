@@ -14,9 +14,21 @@ $Raleway: 'Raleway',
 sans-serif;
 
 
-// Media queries SCSS variables
-$breakpoint-tablet: 768px;
-$breakpoint-mobile: 480px;
+// Media queries SCSS mixins
+$mobile: 411px;
+$tablet: 768px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{tablet}) {
+    @content;
+  }
+}
 
 
 // Set body with no margins or padding so stretches to edges correctly
@@ -44,10 +56,8 @@ header {
   background-color: $Grey;
   
   // Stylign for header on a mobile display
-  @media screen and (max-width: $breakpoint-mobile){
+  @include mobile {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
     height: 10vh;
   }
 
@@ -62,7 +72,7 @@ header {
     margin-left: 5%;
     margin-right: 40px;
 
-    @media screen and (max-width: $breakpoint-mobile){
+    @include mobile {
       width: 30px;
       height: 28px;
     }
@@ -73,7 +83,7 @@ header {
     color: #04619E;
     font-family: $Montserrat;
 
-    @media screen and (max-width: $breakpoint-mobile){
+    @include mobile {
       font-size: large;
     }
   }
@@ -129,12 +139,12 @@ section {
   grid-template-rows: 1fr 1fr;
   grid-gap: 2em;
 
-  @media screen and (max-width: $breakpoint-mobile){
+  @include mobile {
     display: grid;
     grid-template-columns: 4fr;
   }
 
-  @media screen and (max-width: $breakpoint-tablet){
+  @include tablet {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -153,7 +163,7 @@ section {
     font-family: $Raleway;
     color: $White;
 
-    @media screen and (max-width: $breakpoint-mobile){
+    @include mobile {
       padding: 2em;
     }
 
@@ -239,13 +249,16 @@ footer {
   position: fixed;
   font-family: $Montserrat;
 
-  @media screen and (max-width: $breakpoint-mobile) {
+  @include mobile {
     bottom: 0;
     height: 20vh;
-    display: flex;
-    flex: 100%;
-    flex-direction: column;
-    align-items: flex-start;
+    display: grid;
+  }
+
+  @include tablet {
+    bottom: 0;
+    height: 30vh;
+    display: grid;
   }
 
   .footerWrapper {
@@ -254,7 +267,11 @@ footer {
     width: 25%;
     align-items: center;
 
-    @media screen and (max-width: $breakpoint-mobile){
+    @include mobile {
+      justify-content: flex-start;
+    }
+
+    @include tablet {
       justify-content: flex-start;
     }
   }
@@ -269,6 +286,14 @@ footer {
 // above the footer, an easy quick fix
 .footerspacer {
   height: 10vh;
+
+  @include mobile {
+    height: 20vh;
+  }
+
+  @include tablet {
+    height: 20vh;
+  }
 }
 
 .booking {
