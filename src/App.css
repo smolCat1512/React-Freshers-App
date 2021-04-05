@@ -12,25 +12,35 @@ body {
 }
 
 header {
-  margin: 0;
-  padding: 0;
   height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: wrap;
-          flex-direction: wrap;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
   border-bottom: 3px solid #04619E;
   position: fixed;
   background-color: #D6DDE1;
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 10vh;
+  }
 }
 
 header img {
@@ -44,6 +54,14 @@ header img {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 5%;
+  margin-right: 40px;
+}
+
+@media screen and (max-width: 480px) {
+  header img {
+    width: 30px;
+    height: 28px;
+  }
 }
 
 header h1 {
@@ -51,106 +69,15 @@ header h1 {
   font-family: "Montserrat", sans-serif;
 }
 
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: large;
+  }
+}
+
 .spacer {
   width: 100%;
   height: 95px;
-}
-
-.navbar {
-  height: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.menu-bars {
-  margin-right: 2rem;
-  font-size: 2rem;
-  background: none;
-}
-
-.nav-menu {
-  background-color: #689DF4;
-  width: 300px;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: fixed;
-  top: 0;
-  font-family: "Raleway", sans-serif;
-  left: -100%;
-  -webkit-transition: 850ms;
-  transition: 850ms;
-}
-
-.nav-menu-active {
-  right: 0;
-  -webkit-transition: 350ms;
-  transition: 350ms;
-}
-
-.nav-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 8px 0px 8px 16px;
-  list-style: none;
-  height: 80px;
-}
-
-.nav-text a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 18px;
-  width: 95%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 16px;
-  border-radius: 4px;
-}
-
-.nav-text a:hover {
-  background-color: #04619E;
-}
-
-.nav-menu-items {
-  width: 100%;
-}
-
-.navbar-toggle {
-  background-color: #689DF4;
-  width: 100%;
-  height: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 span {
@@ -187,7 +114,7 @@ section p {
   margin-left: 10%;
 }
 
-section .homeGrid {
+.homeGrid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -197,25 +124,48 @@ section .homeGrid {
   grid-gap: 2em;
 }
 
-section .homeGrid a {
+@media screen and (max-width: 480px) {
+  .homeGrid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 4fr;
+        grid-template-columns: 4fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .homeGrid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    margin-bottom: 10%;
+  }
+}
+
+.homeGrid a {
   font-size: 20px;
   text-decoration: none;
   background-color: #689DF4;
-  border-radius: 20px;
-  padding: 1em;
-  padding-top: 3em;
-  padding-bottom: 3em;
+  border-radius: 10px;
+  padding-top: 1em;
+  padding-bottom: 1em;
   margin: 40px;
   text-align: center;
   font-family: "Raleway", sans-serif;
-}
-
-section .homeGrid a a:hover {
-  color: #000000;
-}
-
-section .homeGrid a:visited {
   color: #ffffff;
+}
+
+@media screen and (max-width: 480px) {
+  .homeGrid a {
+    padding: 2em;
+  }
+}
+
+.homeGrid a p:hover {
+  color: #000000;
 }
 
 main {
@@ -303,6 +253,26 @@ footer {
   font-family: "Montserrat", sans-serif;
 }
 
+@media screen and (max-width: 480px) {
+  footer {
+    bottom: 0;
+    height: 20vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 footer .footerWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -315,6 +285,14 @@ footer .footerWrapper {
           align-items: center;
 }
 
+@media screen and (max-width: 480px) {
+  footer .footerWrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 footer .socials {
   width: 40px;
   height: 40px;
@@ -325,12 +303,15 @@ footer .socials {
 }
 
 .booking {
-  padding: 16px 32px;
-  border-radius: 20px;
+  padding: 16px 28px;
+  border-radius: 10px;
   background-color: #04619E;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
-  margin-bottom: 10%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 10px;
 }
 
 .removeleftmargin {

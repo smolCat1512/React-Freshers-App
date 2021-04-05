@@ -13,6 +13,12 @@ sans-serif;
 $Raleway: 'Raleway',
 sans-serif;
 
+
+// Media queries SCSS variables
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 480px;
+
+
 // Set body with no margins or padding so stretches to edges correctly
 body {
   margin: 0;
@@ -28,19 +34,24 @@ body {
 
 // Header styling, all header styling apart from nav menu/sidebar
 header {
-  margin: 0;
-  padding: 0;
   height: 10vh;
   display: flex;
-  flex-direction: wrap;
-  flex-wrap: wrap;
-  // align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: flex-start;
   width: 100%;
   border-bottom: 3px solid $DarkBlue;
   position: fixed;
   background-color: $Grey;
+  
+  // Stylign for header on a mobile display
+  @media screen and (max-width: $breakpoint-mobile){
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 10vh;
+  }
 
+  // Setting for logo, aligns and changes color
   img {
     width: 60px;
     height: 52px;
@@ -49,88 +60,28 @@ header {
     text-align: center;
     align-items: center;
     margin-left: 5%;
+    margin-right: 40px;
+
+    @media screen and (max-width: $breakpoint-mobile){
+      width: 30px;
+      height: 28px;
+    }
   }
 
+  // Setting for header h1 text (EHU Freshers App)
   h1 {
     color: #04619E;
     font-family: $Montserrat;
+
+    @media screen and (max-width: $breakpoint-mobile){
+      font-size: large;
+    }
   }
 }
 
-.spacer
-{
-    width: 100%;
-    height: 95px;
-}
-
-// Navigation menu styling
-.navbar {
-  height: 80px;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-
-.menu-bars {
-  margin-right: 2rem;
-  font-size: 2rem;
-  background: none;
-}
-
-.nav-menu {
-  background-color: $LightBlue;
-  width: 300px;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  font-family: $Raleway;
-  left: -100%;
-  transition: 850ms;
-}
-
-.nav-menu-active {
-  right: 0;
-  transition: 350ms;
-}
-
-.nav-text {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  padding: 8px 0px 8px 16px;
-  list-style: none;
-  height: 80px;
-}
-
-.nav-text a {
-  text-decoration: none;
-  color: $White;
-  font-size: 18px;
-  width: 95%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding: 0 16px;
-  border-radius: 4px;
-}
-
-.nav-text a:hover {
-  background-color: $DarkBlue;
-}
-
-.nav-menu-items {
+.spacer {
   width: 100%;
-}
-
-.navbar-toggle {
-  background-color: $LightBlue;
-  width: 100%;
-  height: 80px;
-  display: flex;
-  justify-content: start;
-  align-items: center;
+  height: 95px;
 }
 
 span {
@@ -168,35 +119,50 @@ section {
     font-family: $Raleway;
     margin-left: 10%;
   }
+}
 
-  .homeGrid {
+// Styling for the grid on home page, align items as needed,
+// and styles other requirements as needed
+.homeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2em;
+
+  @media screen and (max-width: $breakpoint-mobile){
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 2em;
+    grid-template-columns: 4fr;
+  }
 
-    a {
-      font-size: 20px;
-      text-decoration: none;
-      background-color: $LightBlue;
-      border-radius: 20px;
-      padding: 1em;
-      padding-top: 3em;
-      padding-bottom: 3em;
-      margin: 40px;
-      text-align: center;
-      font-family: $Raleway;
+  @media screen and (max-width: $breakpoint-tablet){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin-bottom: 10%;
+  }
 
-      a:hover {
-        color: #000000;
-      }
+  a {
+    font-size: 20px;
+    text-decoration: none;
+    background-color: $LightBlue;
+    border-radius: 10px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: 40px;
+    text-align: center;
+    font-family: $Raleway;
+    color: $White;
+
+    @media screen and (max-width: $breakpoint-mobile){
+      padding: 2em;
     }
 
-    a:visited {
-      color: $White;
+    p:hover {
+      color: #000000;
     }
   }
 }
+
 
 main {
   height: 80vh;
@@ -273,11 +239,24 @@ footer {
   position: fixed;
   font-family: $Montserrat;
 
+  @media screen and (max-width: $breakpoint-mobile) {
+    bottom: 0;
+    height: 20vh;
+    display: flex;
+    flex: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .footerWrapper {
     display: flex;
     justify-content: space-around;
     width: 25%;
     align-items: center;
+
+    @media screen and (max-width: $breakpoint-mobile){
+      justify-content: flex-start;
+    }
   }
 
   .socials {
@@ -289,16 +268,17 @@ footer {
 // Created and used on each page for design, allows content to flow
 // above the footer, an easy quick fix
 .footerspacer {
-  height:10vh;
+  height: 10vh;
 }
 
 .booking {
-  padding: 16px 32px;
-  border-radius: 20px;
+  padding: 16px 28px;
+  border-radius: 10px;
   background-color: $DarkBlue;
   color: $White;
   font-family: $Montserrat;
-  margin-bottom: 10%;
+  display: inline-flex;
+  margin-top: 10px;
 }
 
 .removeleftmargin {

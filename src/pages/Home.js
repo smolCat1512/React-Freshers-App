@@ -11,28 +11,28 @@ function Home() {
         <h2>Please select an option/service:</h2>
         <div class="homeGrid">
             <Link to="/transitions">
-                <a>Transitions Team</a>
+                <p>Transitions Team</p>
             </Link>
             <Link to="/campusservices">
-                <a>Campus Services</a>
+                <p>Campus Services</p>
             </Link>
             <Link to="/campusmap">
-                <a>Campus Map</a>
+                <p>Campus Map</p>
             </Link>
             <Link to="/itservices">
-                <a>IT Services</a>
+                <p>IT Services</p>
             </Link>
             <Link to="/societies">
-                <a>Societies</a>
+                <p>Societies</p>
             </Link>
             <Link to="/localservices">
-                <a>Local Services</a>
+                <p>Local Services</p>
             </Link>
             <Link to="/timetable">
-                <a>Timetable</a>
+                <p>Timetable</p>
             </Link>
             <Link to="/calendar">
-                <a>Calendar/Schedule</a>
+                <p>Calendar/Schedule</p>
             </Link>
         </div>
       </section>
