@@ -1,15 +1,30 @@
 import React from "react"
 import '../App.css';
 import campusehu from '../pages/campusservices/campusehu.jpg';
+import campusmain from '../pages/campusservices/campusmain.jpg'
 
 function CampusServices() {
         return (
         <main>
             <h1>Campus Services Page</h1>
 
-            <p>This is the campus service page, not all information availble is presented here.</p>
-            <p>Much more information is available at:</p>
-            <a target="_blank" href="https://www.edgehill.ac.uk/studentservices/campus-life-2/" 
+            <img src={campusmain} alt="Edge Hill main campus building" height={200} width={500} />
+
+
+            <p>This is the campus service page, not all information available is presented here.</p>
+
+            <p>The below video is an overview of campus video produced by Edge Hill to show the beautiful
+                campus and facilities availble.
+            </p>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NwHgf3kzdVw" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+
+            <p>Much more information regarding the facilities and campus is available at:</p>
+            <a className="mobile-left-margin" target="_blank" 
+            href="https://www.edgehill.ac.uk/studentservices/campus-life-2/" 
             rel="noreferrer">Edge Hill Student Services</a>
 
             <h2>Critical Incident Reporting</h2>
@@ -26,17 +41,17 @@ function CampusServices() {
                 to play our part. If you have symptoms tests and support is available, the
                 latest information is available through the below link:
             </p>
-            <a href="https://www.edgehill.ac.uk/coronavirus-faq/students/" 
-            target="_blank" rel="noreferrer">Please click here to open latet guidance and info in a new link</a>
-
+            <a className="mobile-left-margin" href="https://www.edgehill.ac.uk/coronavirus-faq/students/" 
+            target="_blank" rel="noreferrer">Latest guidance link - please click</a>
 
             <h1>Accomodation</h1>
 
+            <p>Edge Hill has a dedicated accommodation team, this team not only helps with on campus
+                accommodation but also off campus.
+            </p>
 
 
-
-
-            <a target="_blank" href="https://accommodation.apps.edgehill.ac.uk/RunFeature/RunFeature?ftl=X539cede95d474e339a6ef92b481d860c" 
+            <a className="mobile-left-margin" target="_blank" href="https://accommodation.apps.edgehill.ac.uk/RunFeature/RunFeature?ftl=X539cede95d474e339a6ef92b481d860c" 
             rel="noreferrer">Accomodation portal link</a>
 
 
@@ -54,6 +69,9 @@ function CampusServices() {
             <a rel="noreferrer" target="_blank" href="https://www.facebook.com/ehucampuslife">
             <img class="socials" src="images/facebook.png" alt="Facebook link" />
           </a>
+
+          <div className="footerspacer"></div>
+
         </main>
         );
     }

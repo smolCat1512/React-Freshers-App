@@ -15,7 +15,7 @@ sans-serif;
 
 
 // Media queries SCSS mixins
-$mobile: 411px;
+$mobile: 414px;
 $tablet: 768px;
 
 @mixin mobile {
@@ -146,8 +146,7 @@ section {
 
   @include tablet {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 10%;
   }
 
@@ -180,8 +179,18 @@ main {
   margin-right: 5%;
   z-index: -1;
 
+  @include mobile {
+    margin: 0;
+    justify-content: center;
+  }
+
   img {
     margin-left: 10%;
+
+    @include mobile {
+      margin: 0;
+      width: 100%;
+    }
   }
 
   h1 {
@@ -209,6 +218,11 @@ main {
 
   iframe {
     margin-left: 10%;
+
+    @include mobile {
+      margin: 0;
+      width: 100%;
+    }
   }
 
   ul {
@@ -225,6 +239,12 @@ main {
     text-decoration: none;
     color: $DarkBlue;
     font-family: $Raleway;
+
+    @include mobile {
+      margin: 0;
+      width: 100%;
+      justify-content: center;
+    }
   }
 
   .socials {
@@ -288,11 +308,7 @@ footer {
   height: 10vh;
 
   @include mobile {
-    height: 20vh;
-  }
-
-  @include tablet {
-    height: 20vh;
+    height: 200px;
   }
 }
 
@@ -304,8 +320,18 @@ footer {
   font-family: $Montserrat;
   display: inline-flex;
   margin-top: 10px;
+
+  @include mobile {
+    display: inline-flex;
+    justify-content: center;
+    width: 80%;
+  }
 }
 
 .removeleftmargin {
   margin-left: 0%;
+}
+
+.mobile-left-margin {
+  margin-left: 10%;
 }

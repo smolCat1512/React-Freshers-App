@@ -35,6 +35,7 @@ function Home() {
                 <p>Calendar/Schedule</p>
             </Link>
         </div>
+        <div className="footerspacer"></div>
       </section>
     );
   }
