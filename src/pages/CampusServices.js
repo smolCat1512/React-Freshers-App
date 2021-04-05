@@ -30,7 +30,7 @@ function CampusServices() {
             href="https://www.edgehill.ac.uk/studentservices/campus-life-2/" 
             rel="noreferrer">Edge Hill Student Services</a>
 
-            <h2>Critical Incident Reporting</h2>
+            <h1>Critical Incident Reporting</h1>
 
             <p>If you have an urgent emergency (medical, police, fire) phone <strong>999.</strong></p>
 
@@ -66,7 +66,7 @@ function CampusServices() {
 
             <p>The accommodation portal link can be accessed directly using the below link -</p>
 
-            <a className="mobile-left-margin" target="_blank" href="https://accommodation.apps.edgehill.ac.uk/RunFeature/RunFeature?ftl=X539cede95d474e339a6ef92b481d860c" 
+            <a className="mobile-left-margin" target="_blank" href="https://www.edgehill.ac.uk/services/campus-accommodation/" 
             rel="noreferrer">Accomodation portal link</a>
             
             <h2>Campus Life EHU</h2>
@@ -77,11 +77,26 @@ function CampusServices() {
                 Providing not only guidance but support and events information.
             </p>
 
-
             <h2>Connect to CampusEHU on Facebook - click the logo</h2>
             <a rel="noreferrer" target="_blank" href="https://www.facebook.com/ehucampuslife">
-            <img class="socials mobile-left-margin" src="images/facebook.png" alt="Facebook link" />
-          </a>
+                <img class="socials mobile-left-margin" src="images/facebook.png" alt="Facebook link" />
+            </a>
+
+            <h1>Inclusions Team</h1>
+
+            <p>The Inclusions Team provide information, guidance and support to applicants and students who
+                 have disclosed any of the following disabilities: Autism Spectrum Conditions (ASC), 
+                 Mental Health, Sensory Impairment, Mobility difficulties or a medical condition e.g. Epilepsy, 
+                 Diabetes, Heart Condition, Severe Asthma and we work closely with academic and support staff 
+                 across the University.</p>
+
+            <p>The breadth and depth of support provided is far too much to go into on this application, and as
+                always when seeking mental health or health support it is best to speak to professionals. The
+                inclusions team can be contacted by email at inclusionteam@edgehill.ac.uk, but please click the
+                 link below for access to all the services, and information on how to access these services:
+            </p>
+            <a className="mobile-left-margin" rel="noreferrer" target="_blank" 
+            href="https://www.edgehill.ac.uk/studentservices/inclusive/?tab=inclusion">Inclusions Team Link</a>
 
           <div className="footerspacer"></div>
 

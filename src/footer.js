@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 
 function Footer() {
     return (
       <footer>
-        <h2>2021 Shaun Halliday</h2>
+        <h2>	&#169; 2021 Shaun Halliday</h2>
         <div class="footerWrapper">
           <h2>Socials:</h2>
           <a rel="noreferrer" target="_blank" href="https://www.facebook.com/studentsehu">
