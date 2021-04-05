@@ -307,11 +307,13 @@ footer {
 .footerspacer {
   height: 10vh;
 
+  // mobile adjustment to push content above footer as needed
   @include mobile {
     height: 200px;
   }
 }
 
+// booking class for booking a tags on transitions team page
 .booking {
   padding: 16px 28px;
   border-radius: 10px;
@@ -321,17 +323,27 @@ footer {
   display: inline-flex;
   margin-top: 10px;
 
+  // Mobile styling for transitions team booking a tags
   @include mobile {
     display: inline-flex;
     justify-content: center;
     width: 80%;
+    margin-left: 2.5%;
   }
 }
 
+// Used in media queries to remove left margin where needed to bring
+// content back inline
 .removeleftmargin {
   margin-left: 0%;
 }
 
+// Used in media queries to push a tags inline in viewport, mainly on mobile
+.mobile-left-margin-small {
+  margin-left: 2.5%;
+}
+
+// Used in media queries to push a tags inline in viewport
 .mobile-left-margin {
   margin-left: 10%;
 }

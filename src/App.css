@@ -360,6 +360,7 @@ footer .socials {
         -ms-flex-pack: center;
             justify-content: center;
     width: 80%;
+    margin-left: 2.5%;
   }
 }
 
@@ -367,11 +368,11 @@ footer .socials {
   margin-left: 0%;
 }
 
-.mobile-left-margin {
-  margin-left: 10%;
+.mobile-left-margin-small {
+  margin-left: 2.5%;
 }
 
-.little-left-margin {
+.mobile-left-margin {
   margin-left: 10%;
 }
 /*# sourceMappingURL=App.css.map */
