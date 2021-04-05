@@ -1,3 +1,4 @@
+// Import required library, Sass built css and images
 import React from "react"
 import '../App.css';
 import campusehu from '../pages/campusservices/campusehu.jpg';
@@ -10,8 +11,10 @@ function CampusServices() {
 
             <img src={campusmain} alt="Edge Hill main campus building" height={200} width={500} />
 
-
-            <p>This is the campus service page, not all information available is presented here.</p>
+            <p>This is the campus service page, not all information available is presented here. This page contains
+                advice and links to report critical incidents, the latest covid guidance, accommodation links,
+                campus life EHU team information, and an inclusions team link.
+            </p>
 
             <p>The below video is an overview of campus video produced by Edge Hill to show the beautiful
                 campus and facilities availble.
@@ -50,11 +53,21 @@ function CampusServices() {
                 accommodation but also off campus.
             </p>
 
+            <p>There are a wide range of services available, whether living in halls, off campus privately,
+                updates on coronavirus limitations or help with accommodation, reporting issues and lots more.
+            </p>
+
+            <p>The link to see this services is here -</p>
+            
+
+            <a target="_blank" className="mobile-left-margin"
+            href="https://www.edgehill.ac.uk/studentservices/accommodation/" rel="noreferrer">
+                Accomodation services link</a>
+
+            <p>The accommodation portal link can be accessed directly using the below link -</p>
 
             <a className="mobile-left-margin" target="_blank" href="https://accommodation.apps.edgehill.ac.uk/RunFeature/RunFeature?ftl=X539cede95d474e339a6ef92b481d860c" 
             rel="noreferrer">Accomodation portal link</a>
-
-
             
             <h2>Campus Life EHU</h2>
             <a href="https://www.edgehill.ac.uk/studentservices/campus-life-2/">
@@ -65,9 +78,9 @@ function CampusServices() {
             </p>
 
 
-            <h2>Connect to CampusEHU - click the logo</h2>
+            <h2>Connect to CampusEHU on Facebook - click the logo</h2>
             <a rel="noreferrer" target="_blank" href="https://www.facebook.com/ehucampuslife">
-            <img class="socials" src="images/facebook.png" alt="Facebook link" />
+            <img class="socials mobile-left-margin" src="images/facebook.png" alt="Facebook link" />
           </a>
 
           <div className="footerspacer"></div>
