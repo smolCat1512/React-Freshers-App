@@ -86,6 +86,10 @@ header + main {
   padding-top: 102px;
 }
 
+.homebackground {
+  padding-top: 60px;
+}
+
 section {
   height: 80vh;
 }

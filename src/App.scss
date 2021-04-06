@@ -107,6 +107,12 @@ header+main {
   padding-top: 102px;
 }
 
+// Implemented so text pushing below header on home page
+// after implementing a background image
+.homebackground {
+  padding-top: 60px;
+}
+
 // Section styling - used only on the home page, kept as section
 // to differentiate from the main layout used in all other pages
 section {

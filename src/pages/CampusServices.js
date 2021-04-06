@@ -79,7 +79,7 @@ function CampusServices() {
 
             <h2>Connect to CampusEHU on Facebook - click the logo</h2>
             <a rel="noreferrer" target="_blank" href="https://www.facebook.com/ehucampuslife">
-                <img class="socials mobile-left-margin" src="images/facebook.png" alt="Facebook link" />
+                <img class="socials mobile-left-margin" src="images/facebook.jpg" alt="Facebook link" />
             </a>
 
             <h1>Inclusions Team</h1>
