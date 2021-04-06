@@ -11,11 +11,12 @@ import SocietiesData from '../pages/societies/societies.json';
                 link, but also see below for a selection of societies available at Edge Hill.
             </p>
 
+
             <h2>Selected Societies:</h2>
 
             {SocietiesData.map((societiesDetail, index)=> {
                 return<div className="societiestopmargin">
-                        <img src={societiesDetail.image } width="300" height="300" alt={societiesDetail.title + " logo"} />
+                        <img src={societiesDetail.image } width="200" height="200" alt={societiesDetail.title + " logo"} />
                         <h2>{societiesDetail.title}</h2>
                         <p>{societiesDetail.description}</p>
                         <p>Meetings: {societiesDetail.meetings}</p>

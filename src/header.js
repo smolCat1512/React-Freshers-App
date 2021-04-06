@@ -7,7 +7,7 @@ function Header() {
       <header>
         <Link to="/">
           <a href="/">
-            <img src="images/logo.jpg" alt="Uni Logo" />
+            <img src="/images/logo.jpg" alt="Uni Logo" />
           </a>
         </Link>
         <Link to="/">
