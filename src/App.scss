@@ -90,11 +90,14 @@ header {
   }
 }
 
+// spacer class to set width and height and used
+// where a space is required
 .spacer {
   width: 100%;
   height: 95px;
 }
 
+// Style for spans
 span {
   margin-left: 16px;
 }
@@ -104,6 +107,7 @@ header+section {
   padding-top: 102px;
 }
 
+// Padding to push main under header
 header+main {
   padding-top: 102px;
 }
@@ -179,7 +183,8 @@ section {
   }
 }
 
-
+// Main styling, this is the style set to all pages that use
+// a main as content container, this is all the pages apart from home
 main {
   height: 80vh;
   margin-left: 5%;
