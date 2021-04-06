@@ -15,6 +15,7 @@ import LocalServices from './pages/LocalServices';
 import Timetable from './pages/Timetable';
 import Calendar from './pages/Calendar';
 
+
 // Main App component, encompassing all required content of the
 // application
 class App extends Component {
@@ -23,7 +24,7 @@ class App extends Component {
     <Router>
     <div>
       <Header />
-      <Switch>
+      <Switch >
         <Route path="/" exact component={Home} />
         <Route path="/transitions" component={Transitions} />
         <Route path="/campusservices" component={CampusServices} />
