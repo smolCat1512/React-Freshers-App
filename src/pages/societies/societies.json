@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "image": "../pages/societies/allforart.jpg",
+        "title": "All for Art",
+        "description": "This society is as the name suggests all about art. Any art form is welcome, be it painting, film, pencil, dance, tin foil, mixed media, sculpture, digital, etc. Whatever you may view as art is considered art! No matter your skill level we encourage you to join!",
+        "meetings": "The meetings will take place on Wednesday nights between 7-9.",
+        "social": "Instgram - @all_for_art_society"
+    },
+    {
+        "id": 2,
+        "image": "../pages/societies/animesociety.jpg",
+        "title": "Edge Hill Anime Society",
+        "description": "Do you like anime? Do you enjoy talking about Japanese Cartoons with equally passionate people? Then come on down to our wonderous Anime society. Here you can enjoy a wide range of series from slice of life to Shonen action. You can watch series across the semester in our regular sessions or enjoy single episodes of anime within a category in our monthly events. If that all sounds good then come on down to the otaku oasis, the Weebman's wonderland, the Edge Hill Anime Society.",
+        "meetings": "We have 2 sessions a week, one on thursday and one on satuday both run from 6 till 10 (roughly).",
+        "social": "Facebook: EHSU Anime Society, Instagram: @ehsuanime"
+    },
+    {
+        "id": 3,
+        "image": "../pages/societies/doctorwho.jpg",
+        "title": "Edge Hill Doctor Who Society",
+        "description": "Members can attend at any time for as long as they wish. Everybody is welcome whether you are a long-time fan or someone new looking to get into the show. Each week members vote on what we watch, through themed polls on our Facebook, Instagram, and Twitter pages. Throughout the year we also organise Doctor Who quizzes and game nights.",
+        "meetings": "Each week we meet on Friday's at 6pm - 9pm on Friday in M46 and on Sundays at 5.30-9pm in Hub 2 to watch a variety of new and old Doctor Who episodes, along with Torchwood and Sarah Jane Adventures.",
+        "social": "Twitter : @EHU_DoctorWho  Instagram: @ehu_doctorwho"
+    },
+    {
+        "id": 4,
+        "image": "../pages/societies/wrestling.jpg",
+        "title": "Edge Hill Wrestling Society",
+        "description": "The Edge Hill Wrestling Society is for all the wrestling fans at the university! Due to current circumstances we will be operating virtually for events such as watchalongs, quizzes or discussions!",
+        "meetings": "TBC",
+        "social": "N/A"
+    },
+    {
+        "id": 5,
+        "image": "../pages/societies/esports.jpg",
+        "title": "Edge Hill Esports Society",
+        "description": "Interested in Esports? Do you play any of the following; League of Legends, Overwatch, Counter Strike Global Offensive, Rocket League, Dota or another competitive game? Just interested in watching the latest Esport tournaments? Come join us and become apart of Edge Hill Universities Esport scene.",
+        "meetings": "TBC",
+        "social": "N/A"
+    },
+    {
+        "id": 6,
+        "image": "../pages/societies/harrypotter.jpg",
+        "title": "Edge Hill Harry Potter Society",
+        "description": "Do you love the Wizarding World of Harry Potter and want to meet new people who also love this magical franchise? The kind of sessions we do: Casual board games and card games sessions, Active outside activity sessions (Such as capture the flag and trips (E.G. To the Mandrakes Cafe in Ormskirk)",
+        "meetings": "TBC",
+        "social": "Facebook: @EdgehillHP, Instagram: @EdgehillHP"
+    }
+
+]
