@@ -13,11 +13,11 @@ import '../App.css';
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen></iframe>
             <h2>Campus Map Link</h2>
-            <a target="_blank" href="https://www.edgehill.ac.uk/documents/files/ormskirk-campus-map.pdf" rel="noreferrer">Campus map link (opens in a new window)</a>
+            <a className="mobile-left-margin" target="_blank" href="https://www.edgehill.ac.uk/documents/files/ormskirk-campus-map.pdf" rel="noreferrer">Campus map link (opens in a new window)</a>
 
             <p>There is also a campus guide/map available at the following link:</p>
 
-            <a target="_blank" href="https://issuu.com/edge_hill_university/docs/edge_hill_-_returning_to_campus_guide_digital_fa?fr=sZWE4MzUzNjk3" rel="noreferrer">Campus guide and map link (opens in a new window)</a>
+            <a className="mobile-left-margin" target="_blank" href="https://issuu.com/edge_hill_university/docs/edge_hill_-_returning_to_campus_guide_digital_fa?fr=sZWE4MzUzNjk3" rel="noreferrer">Campus guide link (opens in a new window)</a>
             
             <div className="footerspacer"></div>
         </main>
