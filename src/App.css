@@ -383,4 +383,11 @@ footer .socials {
 .societiestopmargin {
   padding-top: 5%;
 }
+
+@media (max-width: 414px) {
+  .societiesLogos {
+    width: 50%;
+    margin-left: 25%;
+  }
+}
 /*# sourceMappingURL=App.css.map */

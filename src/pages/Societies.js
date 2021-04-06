@@ -14,9 +14,9 @@ import SocietiesData from '../pages/societies/societies.json';
 
             <h2>Selected Societies:</h2>
 
-            {SocietiesData.map((societiesDetail, index)=> {
+            {SocietiesData.map((societiesDetail)=> {
                 return<div className="societiestopmargin">
-                        <img src={societiesDetail.image } width="200" height="200" alt={societiesDetail.title + " logo"} />
+                        <img className="societiesLogos" src={societiesDetail.image } width="200" height="200" alt={societiesDetail.title + " logo"} />
                         <h2>{societiesDetail.title}</h2>
                         <p>{societiesDetail.description}</p>
                         <p>Meetings: {societiesDetail.meetings}</p>

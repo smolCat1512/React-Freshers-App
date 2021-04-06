@@ -362,7 +362,16 @@ footer {
   margin-left: 10%;
 }
 
+// 
 .societiestopmargin {
   padding-top: 5%;
 }
 
+// Styling to set size and alignment of logos in societies page for mobile
+// screens
+.societiesLogos {
+  @include mobile {
+    width: 50%;
+    margin-left: 25%;
+  }
+}
