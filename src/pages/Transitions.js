@@ -5,7 +5,7 @@ import transitions from '../pages/transitions/transitions.jpg';
 // Transitions page component, contains all transition page content
 function Transitions() {
     return (
-        <main>
+        <main className="fade-in">
         <h1>Transitions Page</h1>
 
         <img src={transitions} alt="Students walking across a bridge" height={200} width={500} />

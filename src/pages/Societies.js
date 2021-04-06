@@ -4,7 +4,7 @@ import SocietiesData from '../pages/societies/societies.json';
 
     function Societies() {
         return (
-        <main>
+        <main className="fade-in">
             <h1>Societies Page</h1>
 
             <p>There are many societies at Edge Hill University, the full list can be found at the below

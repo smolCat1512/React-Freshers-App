@@ -166,9 +166,6 @@ section p {
 
 main {
   height: 80vh;
-  margin-left: 5%;
-  margin-right: 5%;
-  z-index: -1;
 }
 
 @media (max-width: 414px) {
@@ -388,6 +385,32 @@ footer .socials {
   .societiesLogos {
     width: 50%;
     margin-left: 25%;
+  }
+}
+
+.fade-in {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=App.css.map */

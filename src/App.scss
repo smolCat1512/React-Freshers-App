@@ -6,8 +6,6 @@ $Black: #000000;
 $White: #ffffff;
 
 
-
-
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Raleway&display=swap');
 $Montserrat: 'Montserrat',
@@ -189,9 +187,6 @@ section {
 // a main as content container, this is all the pages apart from home
 main {
   height: 80vh;
-  margin-left: 5%;
-  margin-right: 5%;
-  z-index: -1;
 
   @include mobile {
     margin: 0;
@@ -362,7 +357,7 @@ footer {
   margin-left: 10%;
 }
 
-// 
+// Styling so space between each society on the societies page
 .societiestopmargin {
   padding-top: 5%;
 }
@@ -373,5 +368,66 @@ footer {
   @include mobile {
     width: 50%;
     margin-left: 25%;
+  }
+}
+
+// Fade in animation to be used on any sections want to fade into screen
+.fade-in {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+
+// The keyframes setting opacity for each browser, cover all browser types
+// for accessibility and functionality
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
   }
 }

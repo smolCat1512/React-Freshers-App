@@ -3,7 +3,7 @@ import '../App.css';
 
     function Calendar() {
         return (
-        <main>
+        <main className="fade-in">
             <h1>Calendar Page</h1>
         </main>
         );

@@ -4,9 +4,18 @@ import '../App.css';
 
     function Timetable() {
         return (
-        <main>
+        <main className="fade-in">
             <h1>Timetable Page</h1>
+
+
+
+
+
+            <div className="footerspacer"></div>
+
         </main>
+
+
         );
     }
 

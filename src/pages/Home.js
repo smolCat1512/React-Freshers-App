@@ -7,7 +7,7 @@ import background from '../pages/home/homebackground.jpg';
 
 function Home() {
     return (
-        <div className="homebackground" style={{backgroundImage: `url(${background})`}}>
+        <div className="homebackground fade-in" style={{backgroundImage: `url(${background})`}}>
         <section>
             <h1>Welcome to the Edge Hill CS Freshers App</h1>
             <h2>Please select an option/service:</h2>

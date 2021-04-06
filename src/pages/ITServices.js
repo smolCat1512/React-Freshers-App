@@ -3,7 +3,7 @@ import '../App.css';
 
 function ITServices() {
         return (
-        <main>
+        <main className="fade-in">
             <h1>IT Services Page</h1>
 
             <p>Starting university, like any change of situation in the 20th century, comes with
