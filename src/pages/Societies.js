@@ -11,6 +11,9 @@ import SocietiesData from '../pages/societies/societies.json';
                 link, but also see below for a selection of societies available at Edge Hill.
             </p>
 
+            <a className="mobile-left-margin" rel="noreferrer" target="_blank" 
+            href="https://www.edgehillsu.org.uk/groups">
+                Societies Link to SU site</a>
 
             <h2>Selected Societies:</h2>
 

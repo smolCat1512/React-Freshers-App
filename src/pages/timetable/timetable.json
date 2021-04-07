@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "course": "BSc Computer Science",
+        "modules": "CIS1107: Foundations of Computer Science, CIS1108: Digital World: Info Systems and Design, CIS1111: Programming: Concepts to Construction 1",
+        "days": "Monday - CIS1107, Tuesday - CIS1108, Wednesday - CIS1111",
+        "times": "Monday - 9am to 11am, Tuesday - 10am to 12am, Wednesday - 2pm to 4pm",
+        "rooms": "CIS1107 - THF01, CIS1108 - THF02, CIS1111 - THF03"
+    },
+    {
+        "id": 2,
+        "course": "BSc Computing",
+        "modules": "CIS1107: Foundations of Computer Science, CIS1108: Digital World: Info Systems and Design, CIS1111: Programming: Concepts to Construction 1",
+        "days": "Wednesday - CIS1107, Thursday - CIS1108, Friday - CIS1111",
+        "times": "Wednesday - 9am to 11am, Thursday - 10am to 12am, Friday - 2pm to 4pm",
+        "rooms": "CIS1107 - THG02, CIS1108 - THG03, CIS1111 - THG04"
+    },
+    {
+        "id": 3,
+        "course": "BSc Computing (Games Programming)",
+        "modules": "CIS1107: Foundations of Computer Science, CIS1108: Digital World: Info Systems and Design, CIS1111: Programming: Concepts to Construction 1",
+        "days": "Tuesday - CIS1107, Wednesday - CIS1108, Thursday - CIS1111",
+        "times": "Tuesday - 11am to 1pm, Wednesday - 11am to 1pm, Thursday - 11am to 1pm",
+        "rooms": "CIS1107 - THF03, CIS1108 - THF04, CIS1111 - THF05"
+    }
+]
