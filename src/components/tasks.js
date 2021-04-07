@@ -1,8 +1,10 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
+// import { useState, useEffect } from 'react'
+import Task from '../components/task'
+
 
 const Tasks = ({ tasks }) => {
-    
+
     // const [tasks, setTasks] = useState([])
 
     // useEffect( () =>{
@@ -21,9 +23,9 @@ const Tasks = ({ tasks }) => {
     // }
     
     return (
-        <div className="task">
+        <div>
           {tasks.map((task) => (
-          <h2>{task.text + ' ' + task.day}</h2>
+              <Task key={task.id} task={task}/>
           ))}
         </div>
     )
