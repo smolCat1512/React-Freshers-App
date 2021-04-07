@@ -1,11 +1,14 @@
 import React from "react"
 import '../App.css';
 import TimetableData from '../pages/timetable/timetable.json';
+import timetable from '../pages/timetable/timetable.jpg';
 
     function Timetable() {
         return (
         <main className="fade-in">
             <h1>Timetable Page</h1>
+
+            <img src={timetable} alt="Timetable" height={500} width={400} />
 
             <p>Welcome to the timetables page.</p>
 
@@ -16,7 +19,7 @@ import TimetableData from '../pages/timetable/timetable.json';
             </p>
 
             {TimetableData.map((timetableDetail)=> {
-                return<div className="timetableGrid">
+                return<div className="timetableFlex">
                             <div className="timetableItem">
                                 <h1>Course: {timetableDetail.course}</h1>
                                 <h2>Modules:</h2>

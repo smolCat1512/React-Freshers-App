@@ -9,7 +9,7 @@ import localhealthcare from '../pages/localservices/localhealthcare.jpg';
         <main className="fade-in">
             <h1>Local Services Page</h1>
 
-            <img src={localhealthcare} alt="Local " height={300} width={500} />
+            <img src={localhealthcare} alt="Local Services" height={300} width={500} />
 
             <p>If you are moving away from home to live to live closer to Edge Hill it is advised you 
                 register with a local GP service( a doctor for non-uk students).</p>

@@ -414,13 +414,32 @@ footer .socials {
   }
 }
 
+.timetableFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .timetableItem {
   width: 600px;
-  height: 500px;
+  height: 575x;
   border: 3px solid #04619E;
   border-radius: 10px;
   -webkit-box-shadow: 12px 12px 2px 1px #689DF4;
           box-shadow: 12px 12px 2px 1px #689DF4;
   margin-bottom: 5%;
+}
+
+@media (max-width: 414px) {
+  .timetableItem {
+    width: 85%;
+    height: 700px;
+  }
 }
 /*# sourceMappingURL=App.css.map */

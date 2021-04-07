@@ -5,7 +5,7 @@
         "modules": "CIS1107: Foundations of Computer Science, CIS1108: Digital World: Info Systems and Design, CIS1111: Programming: Concepts to Construction 1",
         "days": "Monday - CIS1107, Tuesday - CIS1108, Wednesday - CIS1111",
         "times": "Monday - 9am to 11am, Tuesday - 10am to 12am, Wednesday - 2pm to 4pm",
-        "rooms": "CIS1107 - THF01, CIS1108 - THF02, CIS1111 - THF03"
+        "rooms": "CIS1107 - THF01, CIS1108 - THF01, CIS1111 - THF01"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "modules": "CIS1107: Foundations of Computer Science, CIS1108: Digital World: Info Systems and Design, CIS1111: Programming: Concepts to Construction 1",
         "days": "Wednesday - CIS1107, Thursday - CIS1108, Friday - CIS1111",
         "times": "Wednesday - 9am to 11am, Thursday - 10am to 12am, Friday - 2pm to 4pm",
-        "rooms": "CIS1107 - THG02, CIS1108 - THG03, CIS1111 - THG04"
+        "rooms": "CIS1107 - THG02, CIS1108 - THG02, CIS1111 - THG02"
     },
     {
         "id": 3,
@@ -21,6 +21,30 @@
         "modules": "CIS1107: Foundations of Computer Science, CIS1108: Digital World: Info Systems and Design, CIS1111: Programming: Concepts to Construction 1",
         "days": "Tuesday - CIS1107, Wednesday - CIS1108, Thursday - CIS1111",
         "times": "Tuesday - 11am to 1pm, Wednesday - 11am to 1pm, Thursday - 11am to 1pm",
-        "rooms": "CIS1107 - THF03, CIS1108 - THF04, CIS1111 - THF05"
+        "rooms": "CIS1107 - THF03, CIS1108 - THF03, CIS1111 - THF03"
+    },
+    {
+        "id": 4,
+        "course": "BSc Computing (Networking, Security & Forensics)",
+        "modules": "CIS1107: Foundations of Computer Science, CIS1108: Digital World: Info Systems and Design, CIS1111: Programming: Concepts to Construction 1",
+        "days": "Monday - CIS1107, Tuesday - CIS1108, Wednesday - CIS1111",
+        "times": "Monday - 12pm to 2pm, Tuesday - 12pm to 2pm, Wednesday - 12pm to 2pm",
+        "rooms": "CIS1107 - THG04, CIS1108 - THG04, CIS1111 - THG04"
+    },
+    {
+        "id": 5,
+        "course": "BSc Web Design & Development",
+        "modules": "CIS1107: Foundations of Computer Science, CIS1108: Digital World: Info Systems and Design, CIS1111: Programming: Concepts to Construction 1",
+        "days": "Wednesday - CIS1107, Thursday - CIS1108, Friday - CIS1111",
+        "times": "Wednesday - 2pm to 4pm, Thursday - 2pm to 4pm, Friday - 2pm to 4pm",
+        "rooms": "CIS1107 - THF06, CIS1108 - THF06, CIS1111 - THF06"
+    },
+    {
+        "id": 6,
+        "course": "BSc Software Engineering",
+        "modules": "CIS1107: Foundations of Computer Science, CIS1108: Digital World: Info Systems and Design, CIS1111: Programming: Concepts to Construction 1",
+        "days": "Monday - CIS1107, Tuesday - CIS1108, Wednesday - CIS1111",
+        "times": "Tuesday - 3pm to 5pm, Thursday - 3pm to 5pm, Friday - 3pm to 5pm",
+        "rooms": "CIS1107 - THF07, CIS1108 - THF07, CIS1111 - THF07"
     }
 ]

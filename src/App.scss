@@ -55,7 +55,7 @@ header {
   border-bottom: 3px solid $DarkBlue;
   position: fixed;
   background-color: $Grey;
-  
+
   // Stylign for header on a mobile display
   @include mobile {
     display: flex;
@@ -384,68 +384,74 @@ footer {
 // for accessibility and functionality
 @keyframes fadeIn {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
 
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 @-moz-keyframes fadeIn {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
 
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 @-webkit-keyframes fadeIn {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
 
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 @-o-keyframes fadeIn {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
 
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 @-ms-keyframes fadeIn {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
 
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
-// .timetableGrid {
-//   display: flex;
-//   flex-flow: row wrap;
-//   justify-content: space-around;
-//   padding: 0;
-//   margin: 0;
-//   list-style: none;
-// }
+// Flexbox for timetable page items
+.timetableFlex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
 
+// Styling for timetable items, setting sizing, border
+// box-shadow and margin, also mobile width and height
+// for responsive design requirements
 .timetableItem {
   width: 600px;
-  height: 500px;
+  height: 575x;
   border: 3px solid #04619E;
   border-radius: 10px;
   box-shadow: 12px 12px 2px 1px $LightBlue;
   margin-bottom: 5%;
+
+  @include mobile {
+    width: 85%;
+    height: 700px;
+  }
 }
