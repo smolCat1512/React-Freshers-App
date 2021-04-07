@@ -219,6 +219,20 @@ main {
     margin-top: 3%;
   }
 
+  h3 {
+    text-align: left;
+    margin-left: 10%;
+    font-family: $Montserrat;
+    color: $DarkBlue;
+    margin-top: 3%;
+  }
+
+  .delete {
+    margin-left: 200px;
+    color: red;
+    cursor: pointer;
+  }
+
   p {
     font-family: $Raleway;
     margin-left: 10%;
@@ -460,8 +474,10 @@ footer {
   border: 3px solid #04619E;
   border-radius: 10px;
   width: 50%;
-  height: 150px;
-
+  height: 225px;
+  margin-left: 10%;
+  font-family: $Raleway;
+  
   button {
     background-color: $LightBlue;
     padding: 20px;
@@ -480,9 +496,45 @@ footer {
 
 .task {
   margin-top: 20px;
-  border: 3px solid #04619E;
+  padding-top: 10px;
   border-radius: 10px;
   width: 50%;
   height: 150px;
-  
+  margin-left: 10%;
+  background-color: $Grey;
+}
+
+.task.reminder {
+  border-left: 5px solid green;
+}
+
+.add-form {
+  width: 80%;
+  height: 200px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+
+  .checkbox {
+    width: 40px;
+    height: 40px;
+  }
+
+  input {
+    width: 100%;
+    height: 10%;
+  }
+}
+
+.submitButton {
+  background-color: $LightBlue;
+  padding: 20px;
+  border: solid $DarkBlue;
+  border-radius: 10px;
+  font-family: $Raleway;
+  cursor: pointer;
+  margin-left: 100%;
 }

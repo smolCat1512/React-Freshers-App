@@ -15,7 +15,6 @@ import LocalServices from './pages/LocalServices';
 import Timetable from './pages/Timetable';
 import Calendar from './pages/Calendar';
 
-
 // Main App component, encompassing all required content of the
 // application
 class App extends Component {
