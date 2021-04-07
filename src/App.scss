@@ -455,3 +455,34 @@ footer {
     height: 700px;
   }
 }
+
+.taskSetter {
+  border: 3px solid #04619E;
+  border-radius: 10px;
+  width: 50%;
+  height: 150px;
+
+  button {
+    background-color: $LightBlue;
+    padding: 20px;
+    border: solid $DarkBlue;
+    border-radius: 10px;
+    font-family: $Raleway;
+    cursor: pointer;
+    margin-left: 10%;
+
+    button:hover {
+      color: $DarkBlue;
+
+    }
+  }
+}
+
+.task {
+  margin-top: 20px;
+  border: 3px solid #04619E;
+  border-radius: 10px;
+  width: 50%;
+  height: 150px;
+  
+}

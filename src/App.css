@@ -442,4 +442,33 @@ footer .socials {
     height: 700px;
   }
 }
+
+.taskSetter {
+  border: 3px solid #04619E;
+  border-radius: 10px;
+  width: 50%;
+  height: 150px;
+}
+
+.taskSetter button {
+  background-color: #689DF4;
+  padding: 20px;
+  border: solid #04619E;
+  border-radius: 10px;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+  margin-left: 10%;
+}
+
+.taskSetter button button:hover {
+  color: #04619E;
+}
+
+.task {
+  margin-top: 20px;
+  border: 3px solid #04619E;
+  border-radius: 10px;
+  width: 50%;
+  height: 150px;
+}
 /*# sourceMappingURL=App.css.map */
