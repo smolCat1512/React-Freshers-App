@@ -143,7 +143,8 @@ section {
 }
 
 // Styling for the grid on home page, align items as needed,
-// and styles other requirements as needed
+// and styles other requirements as needed. Mobile mixin used
+// where required to resize and amend elements where specified
 .homeGrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -184,7 +185,8 @@ section {
 }
 
 // Main styling, this is the style set to all pages that use
-// a main as content container, this is all the pages apart from home
+// a main as content container, this is all the pages apart from home,
+// mobile mixin used as required for responsive elements/requirements
 main {
   height: 80vh;
 

@@ -25,7 +25,7 @@ import '../App.css';
             <h2>Campus Tour Video</h2>
             
             <iframe width="600" height="350" src="https://www.youtube.com/embed/4eRe-jW9PHk" 
-            title="Edge Hill Univeristy Campus Tour Video" frameborder="0" 
+            title="Edge Hill University Campus Tour Video" frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen></iframe>
 

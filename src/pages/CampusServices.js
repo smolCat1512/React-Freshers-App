@@ -1,4 +1,3 @@
-// Import required library, Sass built css and images
 import React from "react"
 import '../App.css';
 import campusehu from '../pages/campusservices/campusehu.jpg';
@@ -20,7 +19,7 @@ function CampusServices() {
             </p>
 
             <p>The below video is an overview of campus video produced by Edge Hill to show the beautiful
-                campus and facilities availble.
+                campus and facilities available.
             </p>
 
             <iframe width="560" height="315" src="https://www.youtube.com/embed/NwHgf3kzdVw" 
@@ -52,7 +51,7 @@ function CampusServices() {
 
             <h1>Accomodation</h1>
 
-            <p>Edge Hill has a dedicated accommodation team, this team not only helps with on campus
+            <p>Edge Hill has a dedicated accommodation team; this team not only helps with on campus
                 accommodation but also off campus.
             </p>
 
@@ -60,7 +59,7 @@ function CampusServices() {
                 updates on coronavirus limitations or help with accommodation, reporting issues and lots more.
             </p>
 
-            <p>The link to see this services is here -</p>
+            <p>The link to see these services is here -</p>
             
 
             <a target="_blank" className="mobile-left-margin"
@@ -89,7 +88,7 @@ function CampusServices() {
 
             <p>The Inclusions Team provide information, guidance and support to applicants and students who
                  have disclosed any of the following disabilities: Autism Spectrum Conditions (ASC), 
-                 Mental Health, Sensory Impairment, Mobility difficulties or a medical condition e.g. Epilepsy, 
+                 Mental Health, Sensory Impairment, Mobility difficulties or a medical condition e.g., Epilepsy, 
                  Diabetes, Heart Condition, Severe Asthma and we work closely with academic and support staff 
                  across the University.</p>
 
