@@ -466,6 +466,13 @@ footer .socials {
   font-family: "Raleway", sans-serif;
 }
 
+@media (max-width: 414px) {
+  .taskSetter {
+    width: 80%;
+    padding: 10px;
+  }
+}
+
 .taskSetter button {
   background-color: #689DF4;
   padding: 20px;
@@ -476,10 +483,6 @@ footer .socials {
   margin-left: 10%;
 }
 
-.taskSetter button button:hover {
-  color: #04619E;
-}
-
 .task {
   margin-top: 20px;
   padding-top: 10px;
@@ -488,6 +491,12 @@ footer .socials {
   height: 150px;
   margin-left: 10%;
   background-color: #D6DDE1;
+}
+
+@media (max-width: 414px) {
+  .task {
+    width: 80%;
+  }
 }
 
 .task.reminder {
@@ -523,5 +532,11 @@ footer .socials {
   font-family: "Raleway", sans-serif;
   cursor: pointer;
   margin-left: 100%;
+}
+
+@media (max-width: 414px) {
+  .submitButton {
+    margin-left: 80%;
+  }
 }
 /*# sourceMappingURL=App.css.map */

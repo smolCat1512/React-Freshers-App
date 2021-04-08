@@ -477,6 +477,11 @@ footer {
   height: 225px;
   margin-left: 10%;
   font-family: $Raleway;
+
+  @include mobile {
+    width: 80%;
+    padding: 10px;
+  }
   
   button {
     background-color: $LightBlue;
@@ -486,11 +491,6 @@ footer {
     font-family: $Raleway;
     cursor: pointer;
     margin-left: 10%;
-
-    button:hover {
-      color: $DarkBlue;
-
-    }
   }
 }
 
@@ -502,6 +502,10 @@ footer {
   height: 150px;
   margin-left: 10%;
   background-color: $Grey;
+
+  @include mobile {
+      width: 80%;
+  }
 }
 
 .task.reminder {
@@ -537,4 +541,8 @@ footer {
   font-family: $Raleway;
   cursor: pointer;
   margin-left: 100%;
+
+  @include mobile {
+   margin-left: 80%;   
+  }
 }
