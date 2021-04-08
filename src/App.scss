@@ -483,18 +483,19 @@ footer {
     width: 80%;
     padding: 10px;
   }
-
-  // Styling for the button to save tasks/reminders
-  button {
-    background-color: $LightBlue;
-    padding: 20px;
-    border: solid $DarkBlue;
-    border-radius: 10px;
-    font-family: $Raleway;
-    cursor: pointer;
-    margin-left: 10%;
-  }
 }
+
+// Styling for the button to save tasks/reminders
+button {
+  background-color: $LightBlue;
+  padding: 20px;
+  border: solid $DarkBlue;
+  border-radius: 10px;
+  font-family: $Raleway;
+  cursor: pointer;
+  margin-left: 10%;
+}
+
 
 // Styling for each individual tasks, with mobile responsive 
 // resizing need
@@ -552,7 +553,7 @@ footer {
   margin-left: 100%;
 
   @include mobile {
-    margin-left: 80%;
+   margin-left: 80%;
   }
 }
 
