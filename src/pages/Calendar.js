@@ -1,20 +1,29 @@
 import React from "react"
 import '../App.css';
 import Tasks from '../components/Tasks'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import AddTasks from '../components/AddTask'
 
     function Calendar() {
 
-            const [showAddTask, setShowAddTask] = useState(true)
-            const [tasks, setTasks] = useState([
-                {
-                    id: 1,
-                    text: "Visit Catalyst for Andy Clarke book",
-                    day: "Monday 20th April at 10am",
-                    reminder: true
-                }
-            ])
+        const [showAddTask] = useState(true)
+        const [tasks, setTasks] = useState([])
+
+        useEffect(() => {
+            const getTasks = async () => {
+                const tasksFromServer = await fetchTasks()
+                setTasks(tasksFromServer)
+            }
+            getTasks()
+        }, [])
+
+        // Fetch Reminders/Tasks
+        const fetchTasks = async () => {
+            const res = await fetch('http://localhost:5000/tasks')
+                const data = await res.json()
+
+        return data
+    }
 
     // Add Task
     const addTask = (task) => {
@@ -36,13 +45,6 @@ import AddTasks from '../components/AddTask'
         return (
         <main className="fade-in">
             <h1>Reminders Page</h1>
-
-            {/* <Head title='Reminder Tracker'/> */}
-
-            {/* <Head onAdd={() => setShowAddTask(!showAddTask)} /> */}
-
-            {/* <button onAdd={() => setShowAddTask(!showAddTask)} 
-            onClick={onAdd} >Add</button> */}
 
             <div className="taskSetter">
 
