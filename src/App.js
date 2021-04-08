@@ -13,7 +13,7 @@ import ITServices from './pages/ITServices';
 import Societies from './pages/Societies';
 import LocalServices from './pages/LocalServices';
 import Timetable from './pages/Timetable';
-import Calendar from './pages/Calendar';
+import Calendar from './pages/Reminders';
 
 // Main App component, encompassing all required content of the
 // application

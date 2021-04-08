@@ -4,7 +4,7 @@
       "id": 1,
       "text": "Visit Catalyst for Andy Clarke book",
       "day": "Monday 20th April at 10am",
-      "reminder": false
+      "reminder": true
     }
   ]
 }

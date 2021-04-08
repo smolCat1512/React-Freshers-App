@@ -82,6 +82,9 @@ import AddTasks from '../components/AddTask'
         // Main page return content
         return (
         <main className="fade-in">
+
+            <a className="backtohome" href="/">Back to home</a>
+
             <h1>Reminders Page</h1>
 
             <div className="taskSetter">

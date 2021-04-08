@@ -6,6 +6,9 @@ import timetable from '../pages/timetable/timetable.jpg';
     function Timetable() {
         return (
         <main className="fade-in">
+
+            <a className="backtohome" href="/">Back to home</a>
+
             <h1>Timetable Page</h1>
 
             <img src={timetable} alt="Timetable" height={500} width={400} />

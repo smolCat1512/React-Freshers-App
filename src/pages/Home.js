@@ -34,7 +34,7 @@ function Home() {
                         <p>Timetable</p>
                     </Link>
                     <Link to="/calendar">
-                        <p>Calendar/Schedule</p>
+                        <p>Reminders/Tasks</p>
                     </Link>
                 </div>
             <div className="footerspacer"></div>

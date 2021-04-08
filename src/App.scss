@@ -470,6 +470,7 @@ footer {
   }
 }
 
+// Styling for remindsers/tasks setter content
 .taskSetter {
   border: 3px solid #04619E;
   border-radius: 10px;
@@ -482,7 +483,8 @@ footer {
     width: 80%;
     padding: 10px;
   }
-  
+
+  // Styling for the button to save tasks/reminders
   button {
     background-color: $LightBlue;
     padding: 20px;
@@ -494,6 +496,8 @@ footer {
   }
 }
 
+// Styling for each individual tasks, with mobile responsive 
+// resizing need
 .task {
   margin-top: 20px;
   padding-top: 10px;
@@ -504,19 +508,22 @@ footer {
   background-color: $Grey;
 
   @include mobile {
-      width: 80%;
+    width: 80%;
   }
 }
 
+// Styling for the reminder double clicking left border effect
 .task.reminder {
   border-left: 5px solid green;
 }
 
+// Styling for the add form box
 .add-form {
   width: 80%;
   height: 200px;
 }
 
+// Styling for the form elements, checkbox and input boxes
 .form-control {
   display: block;
   width: 100%;
@@ -533,6 +540,8 @@ footer {
   }
 }
 
+// Styling for the submit button on reminders/tasks page
+// with mobile styling to resize on small screens
 .submitButton {
   background-color: $LightBlue;
   padding: 20px;
@@ -543,6 +552,22 @@ footer {
   margin-left: 100%;
 
   @include mobile {
-   margin-left: 80%;   
+    margin-left: 80%;
+  }
+}
+
+// Bac to home link styling, used on each page as 
+// users may not know can click logo to return to home page,
+// extra styling to reduce size and location on mobile devices
+.backtohome {
+  background-color: $DarkBlue;
+  padding: 10px;
+  border: 2px solid $Black;
+  border-radius: 10px;
+  color: $White;
+
+  @include mobile {
+    margin-left: 10%;
+    padding: 5px;
   }
 }

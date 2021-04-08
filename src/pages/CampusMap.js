@@ -4,6 +4,9 @@ import '../App.css';
     function CampusMap() {
         return (
         <main className="fade-in">
+
+            <a className="backtohome" href="/">Back to home</a>
+
             <h1>Campus Map Page</h1>
 
             <p>Edge Hill University’s stunning campus is located in the heart of the North West, 

@@ -6,6 +6,9 @@ import transitions from '../pages/transitions/transitions.jpg';
 function Transitions() {
     return (
         <main className="fade-in">
+
+        <a className="backtohome" href="/">Back to home</a>
+
         <h1>Transitions Page</h1>
 
         <img src={transitions} alt="Students walking across a bridge" height={200} width={500} />

@@ -7,6 +7,9 @@ import campusmain from '../pages/campusservices/campusmain.jpg'
 function CampusServices() {
         return (
         <main className="fade-in">
+
+            <a className="backtohome" href="/">Back to home</a>
+
             <h1>Campus Services Page</h1>
 
             <img src={campusmain} alt="Edge Hill main campus building" height={200} width={500} />

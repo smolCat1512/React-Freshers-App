@@ -7,6 +7,9 @@ import localhealthcare from '../pages/localservices/localhealthcare.jpg';
     function LocalServices() {
         return (
         <main className="fade-in">
+
+            <a className="backtohome" href="/">Back to home</a>
+
             <h1>Local Services Page</h1>
 
             <img src={localhealthcare} alt="Local Services" height={300} width={500} />
